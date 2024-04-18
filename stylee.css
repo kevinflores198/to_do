@@ -6,12 +6,13 @@
 
 body {
     font-size: 15px;
-    background-color: #4a615b;
+    background-image: linear-gradient(60deg,  #a19b95 0%, #ffffff 100%);
+
     color: #f9fafa;
 }
 
 nav {
-    background-color: #c4c0ba;
+    background-color: #4a615b;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -22,8 +23,12 @@ nav {
 
 nav .fa-solid,
 nav a {
-    color: #4a615b;
+    color: #f9fafa;
     text-decoration: none;
+}
+
+nav div img{
+    width: 30px;
 }
 
 #hero .container {
@@ -33,12 +38,14 @@ nav a {
 #hero .container h1 {
     display: flex;
     justify-content: center;
+    color: #4a615b;
 }
 
 #hero .container h2 {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: #4a615b;
 }
 
 .button {
@@ -51,75 +58,66 @@ nav a {
     font-size: 20px;
     padding: 5px;
     border-radius: 10px;
-    background-color: #f9fafa;
-    color: #4a615b;
+    background-color: #4a615b;
+    color: #f0f0f0;
 }
 
 .button button:hover {
-    background-color: rgb(168, 252, 0);
+    background-color: rgb(119, 175, 7);
+    color: #f0f0f0;
 }
 
 .button button:active {
-    background-color: rgb(186, 218, 121);
+    background-color: rgb(140, 183, 53);
 }
 
-#slider {
-    padding: 13px;
-    aspect-ratio: 10 / 16;
-    width: 90%;
-    height: 260px;
-    position: relative;
+#slider{
     display: flex;
+    flex-wrap: nowrap;
     overflow: scroll;
-    scroll-snap-type: x mandatory;
-    border-radius: 20px;
-
 }
 
-#slider .container img {
+#slider img{
+    flex: 1 0 auto;
     width: 100%;
-    left: 0;
-    position: sticky;
-    border-radius: cover;
 }
+
 
 #provisory .container {
     display: flex;
     justify-content: center;
 }
 
-#contenido {
-    padding: 10px;
-}
-
 #contenido h1 {
     display: flex;
     justify-content: center;
+    color: #4a615b;    
 }
 
 #contenido .container-img-text .container {
-    padding: 15px;
-    background-color: rgba(186, 218, 121, 0.276);
-    border-radius: 20px;
-    box-shadow: 8px 7px 30px rgba(0, 0, 0, 0.422);
-}
-
-#contenido .container-img-text .container:hover {
-    background-color: rgba(186, 218, 121, 0.51);
+    box-shadow: 8px 7px 10px rgba(0, 0, 0, 0.422); 
 }
 
 #contenido .container-img-text .container img {
     width: 100%;
-    border-radius: 15px;
 }
 
 #contenido .container-img-text .container p {
     text-align: justify;
+    color: #4a615b;
+    width: 90%;
+    font-weight: bold;
+}
+
+#contenido .container-img-text .container .text{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 footer {
-    background-color: #c4c0ba;
-    color: #4a615b;
+    background-color: #4a615b;
+    color: #f0f0f0;
 }
 
 footer .container {
